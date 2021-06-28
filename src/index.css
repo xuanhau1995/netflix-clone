@@ -1,13 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button-white {
+    @apply p-2 bg-white text-black font-medium flex items-center px-4 rounded cursor-pointer;
+  }
+  .button-light {
+    @apply p-2 bg-gray-500 text-white flex rounded items-center px-4 bg-opacity-60 cursor-pointer justify-center;
+  }
+  .from-gray-fff {
+    @apply bg-[#000];
+  }
+  .button-primary {
+    @apply  bg-red-600 h-12 px-4 rounded cursor-pointer  hover:bg-red-500 transition ease-in duration-200 
+  }
+  .button-outline {
+    @apply h-12 border p-2 rounded cursor-pointer border-gray-700 hover:bg-red-500 transition ease-in duration-300
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-black text-gray-50;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
