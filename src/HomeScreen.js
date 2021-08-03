@@ -7,6 +7,7 @@ function HomeScreen() {
     <>
       <Nav />
       <Contents />
+      <Footer />
     </>
   );
 }

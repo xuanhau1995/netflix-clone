@@ -29,12 +29,12 @@ function Banner() {
   return (
     <>
       <body
-        className="w-full h-full relative"
+        className="w-full  relative bg-black"
         style={{
           backgroundSize: "cover",
           backgroundImage: `url("http://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
           backgroundPosition: "center center",
-          height: 1200,
+          height: 900,
           objectFit: "contain",
         }}
       >
@@ -45,10 +45,10 @@ function Banner() {
             </h1>
             <p className="max-w-md line-clamp-3">{movie.overview}</p>
             <div className="flex space-x-3">
-              <button className="button-white">
+              <button className="button-white rounded-xl h-14 px-8 hover:scale-105 transform transition-all duration-300 shadow-2xl">
                 <PlayIcon className="h-6 pr-2" /> Play
               </button>
-              <button className="button-light">
+              <button className="button-light rounded-xl h-14 px-8 bg-opacity-40 hover:scale-105 transform transition-all duration-300 shadow-2xl">
                 <PlusIcon className="h-6" />
                 Add My List
               </button>

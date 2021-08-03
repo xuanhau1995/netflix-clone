@@ -13,10 +13,10 @@
     @apply bg-[#000];
   }
   .button-primary {
-    @apply  bg-red-600 h-12 px-4 rounded cursor-pointer  hover:bg-red-500 transition ease-in duration-200 
+    @apply bg-red-600 h-14 px-4 rounded-xl cursor-pointer  hover:bg-red-500 transition ease-in duration-200;
   }
   .button-outline {
-    @apply h-12 border p-2 rounded cursor-pointer border-gray-700 hover:bg-red-500 transition ease-in duration-300
+    @apply h-14 border p-2 rounded-xl cursor-pointer border-gray-700 hover:bg-red-500 transition ease-in duration-300;
   }
 }
 
@@ -39,4 +39,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
